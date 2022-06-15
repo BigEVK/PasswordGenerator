@@ -14,6 +14,9 @@ function writePassword() {
 }
 
 
+window.alert("Due to technical difficulties, your password will contain Numbers, Upper and Lower case letters, and special symbols. There will be 13 characters. Thank you for your understanding.")
+
+
 // var password = document.getElementById("generate");
 function generatePassword(){
   // returns a password
@@ -32,3 +35,9 @@ password += chars.substring(randomNumber, randomNumber +1);
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
 
+function getPrompt() {
+  charLength = prompt("Please choose between (8 - 128 cahracters");
+  if (CharLength < 8 || charLength >128) {
+    alert("Please choose between 8 and 128.")
+  }
+}
