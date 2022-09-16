@@ -59,8 +59,8 @@ function generatePassword() {
       }
       console.log(chars);
       
-    for (var i = 0; i <= pwdLength; i++) {
-      var randomNumber = Math.floor(Math.random() * chars.length);
+    for (var i = 0; i <= pwdLength - 1; i++) {
+      var randomNumber = Math.floor(Math.random() * chars.length );
       password += chars.substring(randomNumber, randomNumber + 1);
     }
     return password;
